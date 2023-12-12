@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Management System</title>
+        <script src="lib/angular.min.js" type="text/javascript"></script>
+        <script src="script/employee/app.js" type="text/javascript"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body ng-app="employeeApp" ng-controller="employeeController">
+    <center>
+        <div ng-include="'header.html'"></div>
+        <div ng-show="employeeListContainerVisible">
+            <table class="shadowTable" width="80%">
+                <tr>
+                    <td class="title1" align="center">
+                        Employee List
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="shadowTable"  width="100%">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text" ng-repeat="employee in employees">
+                                    <td>{{employee.firstName}}</td>
+                                    <td>{{employee.lastName}}</td>
+                                    <td>{{employee.email}}</td>
+                                    <td>
+                                        <input class="delete-button" type="button" value="Delete" ng-click="deleteEmployee(employee.id)" />
+                                        <input class="update-button" type="button" value="Update" ng-click="onUpdateClick(employee.id)" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div ng-show="updateEmployeeContainerVisible">
+            <form ng-submit="updateEmployee()">
+                <table class="shadowTable"  >
+                    <tr>
+                        <td class="title3" >
+                            Update Employee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>First Name:</div>
+                            <input class="field" type="text" ng-model="selectedEmployee.firstName" size="50" placeholder="First Name" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Last Name:</div>
+                            <input class="field" type="text" ng-model="selectedEmployee.lastName" size="50" placeholder="Last Name" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Email:</div>
+                            <input class="field" type="email" ng-model="selectedEmployee.email" size="50" placeholder="Email" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="update-button" type="submit" value="Update" />
+                            <input class="button-clear" type="reset" value="Clear" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div ng-show="addEmployeeContainerVisible">
+            <form ng-submit="addEmployee()">
+                <table class="shadowTable"  >
+                    <tr>
+                        <td class="title2">
+                            Add Employee
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>First Name:</div>
+                            <input class="field" type="text" ng-model="selectedEmployee.firstName" size="50" placeholder="First Name" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Last Name:</div>
+                            <input class="field" type="text" ng-model="selectedEmployee.lastName" size="50" placeholder="Last Name" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Email:</div>
+                            <input class="field" type="email" ng-model="selectedEmployee.email" size="50" placeholder="Email" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="button-add" type="submit" value="Add" />
+                            <input class="button-clear" type="reset" value="Clear" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,146 @@
+.delete-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.delete-button:hover {
+    background-color: #cc0000;
+}
+.update-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3399ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.update-button:hover {
+    background-color: #0077cc;
+}
+.add-employee-link {
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+.add-employee-link:hover {
+    text-decoration: underline; 
+    color: #0056b3; 
+}
+table {
+    border-collapse: collapse;
+}
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.8em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #ddd;
+}
+.employee-list-cell {
+    background-color: #D6DCE0;
+    color: #333333;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.add-employee-cell {
+    background-color: #4CAF50; 
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.employee-list-cell:hover {
+    background-color: #ddd; 
+}
+.add-employee-cell:hover {
+    background-color: #45a049;
+}
+th {
+    background-color: #007bff; 
+    color: #fff; 
+    font-size: 18px;
+    padding: 10px;
+    text-align: center; 
+    border: 1px solid #ddd; 
+}
+.button-add {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.button-add:hover {
+    background-color: #45a049;
+}
+.button-clear {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f44336; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-clear:hover {
+    background-color: #d32f2f;
+}
+.field {
+    font-size: 17px;
+    color: #333333;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.title1,.title2,.title3{
+    background-color: #D6DCE0;
+    color: #333333;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title2{
+    background-color: #4caf50;
+    color: #fff;
+}
+.title3{
+    background-color: #3399ff;
+    color: #fff;
+}
+.text{
+    font-size: 18px;
+    color: #333333;
+}
+.shadowTable{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333333;
+}
+
